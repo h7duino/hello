@@ -169,8 +169,8 @@ void loop() {
   doorState = digitalRead(reedSwitchPin);
   if (doorState != lastDoorState) {  // 若門狀態變化
     sendStateChangeMessage(doorState);  // 發送狀態更新訊息
-    lastDoorState = doorState;  // 更新狀態
+    lastDoorState = doorState;  // 更新狀態!
   }
 
-  delay(100);  // 每 100 毫秒檢查一次狀態
+  delay(100);  // 每 100 毫秒檢查一次狀態!
 }
